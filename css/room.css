@@ -122,6 +122,12 @@ li {
   list-style: none;
 }
 
+.section__wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header__inner {
   height: 80px;
   padding: 0 20px;
@@ -272,6 +278,12 @@ li {
           transform: translate(-50%, -50%);
   font-size: 3.4rem;
   font-weight: 700;
+}
+
+.lower-intro {
+  padding: 100px 30px 0;
+  text-align: center;
+  line-height: 2.5;
 }
 
 .breadcrumb {

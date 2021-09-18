@@ -118,72 +118,68 @@
             </button>
           </div>
           <!-- header__inner--right -->
-
-          <!-- モーダルエリアここから -->
-          <section id="modalArea" class="modalArea">
-            <div id="modalBg" class="modalBg"></div>
-            <div class="modalWrapper">
-              <form class="modalContents">
-                <h2 class="modalArea__title">宿泊予約</h2>
-                <dl class="form__body">
-                  <dt><label for="name">お名前</label></dt>
-                  <dt class="form__text">
-                    <input type="text" name="name" id="name" placeholder="例：石井正悟" />
-                  </dt>
-                </dl>
-                <dl class="form__body">
-                  <dt>
-                    <label for="mail-address"></label>
-                    メールアドレス
-                  </dt>
-                  <dd class="form__text">
-                    <input
-                      type="text"
-                      name="mail-address"
-                      id="mail-address"
-                      placeholder="例：Example@example.com"
-                    />
-                  </dd>
-                </dl>
-                <dl class="form__body">
-                  <dt>
-                    <label for="desired-plan">
-                      ご希望のプラン（空いているプランのみ表示されます）
-                    </label>
-                  </dt>
-                  <dd class="form__text">
-                    <select name="desired-plan" id="desired-plan">
-                      <option value="hidden">プランを選択してください</option>
-                      <option value="limited-time">
-                        【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-                      </option>
-                      <option value="weekday-plan">平日に優雅に楽しむ、特別宿泊プラン</option>
-                      <option value="family-plan">
-                        絶景貸切露天と個室会席を満喫できるファミリープラン
-                      </option>
-                    </select>
-                  </dd>
-                </dl>
-                <dl class="form__body">
-                  <dt>
-                    <label for="date-select">日時選択</label>
-                  </dt>
-                  <dd class="form__text">
-                    <input
-                      type="text"
-                      class="flatpickr flatpickr-input"
-                      placeholder="日時を選択してください"
-                      readonly="readonly"
-                    />
-                  </dd>
-                </dl>
-                <input type="submit" class="form__submit-btn" value="送信する" />
-                <div id="closeModal" class="closeModal">×</div>
-              </form>
-            </div>
-          </section>
         </div>
-        <!-- header__inner -->
+        <!-- モーダルエリアここから -->
+        <section id="modalArea" class="modalArea">
+          <div id="modalBg" class="modalBg"></div>
+          <div class="modalWrapper">
+            <form class="modalContents">
+              <h2 class="modalArea__title">宿泊予約</h2>
+              <dl class="form__body">
+                <dt><label for="name">お名前</label></dt>
+                <dt class="form__text">
+                  <input type="text" name="name" id="name" placeholder="例：石井正悟" />
+                </dt>
+              </dl>
+              <dl class="form__body">
+                <dt>
+                  <label for="mail-address"></label>
+                  メールアドレス
+                </dt>
+                <dd class="form__text">
+                  <input
+                    type="text"
+                    name="mail-address"
+                    id="mail-address"
+                    placeholder="例：Example@example.com"
+                  />
+                </dd>
+              </dl>
+              <dl class="form__body">
+                <dt>
+                  <label for="desired-plan">
+                    ご希望のプラン（空いているプランのみ表示されます）
+                  </label>
+                </dt>
+                <dd class="form__text">
+                  <select name="desired-plan" id="desired-plan">
+                    <option value="hidden">プランを選択してください</option>
+                    <option value="limited-time">
+                      【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                    </option>
+                    <option value="weekday-plan">平日に優雅に楽しむ、特別宿泊プラン</option>
+                    <option value="family-plan">
+                      絶景貸切露天と個室会席を満喫できるファミリープラン
+                    </option>
+                  </select>
+                </dd>
+              </dl>
+              <dl class="form__body">
+                <dt>
+                  <label for="date-select">日時選択</label>
+                </dt>
+                <dd class="form__text">
+                  <input
+                    type="text"
+                    class="flatpickr flatpickr-input"
+                    placeholder="日時を選択してください"
+                    readonly="readonly"
+                  />
+                </dd>
+              </dl>
+            </form>
+          </div>
+        </section>
       </header>
       <div class="lower-copy">お部屋</div>
     </div>

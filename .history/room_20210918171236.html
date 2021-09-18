@@ -85,31 +85,31 @@
     <div class="lower-fv" style="background-image: url(/images/oheya-header@2x.jpg)">
       <header class="lower-header">
         <div class="header__inner">
-          <div class="header__inner--left">
+          <div class="header__inner-left">
             <h1 class="lower-header__site-title">
-              <a href="https://yosipblog.com/index.html">石井花壇</a>
+              <a href="index.html">石井花壇</a>
             </h1>
             <div class="header__menu">
               <nav>
                 <ul class="header__list">
                   <li class="header__list-item">
-                    <a href="https://yosipblog.com/room.html#">お部屋</a>
+                    <a href="#">お部屋</a>
                   </li>
                   <li class="header__list-item">
-                    <a href="https://yosipblog.com/cuisine.html">お料理</a>
+                    <a href="cuisine.html">お料理</a>
                   </li>
                   <li class="header__list-item">
-                    <a href="https://yosipblog.com/hot-spring.html">温泉</a>
+                    <a href="hot-spring.html">温泉</a>
                   </li>
                 </ul>
               </nav>
             </div>
             <!-- header__menu -->
           </div>
-          <!--header__inner--left-->
+          <!-- header__inner--left -->
           <div class="header__inner--right">
             <button class="header__reservation">宿泊予約</button>
-            <button class="burger__btn">
+            <button class="bars">
               <span class="bars">
                 <span class="bar bar_top btn__bg-color"></span>
                 <span class="bar bar_mid btn__bg-color"></span>
@@ -117,7 +117,7 @@
               </span>
             </button>
           </div>
-          <!--header__inner--right-->
+          <!-- header__inner--right -->
           <!-- モーダルエリアここから -->
           <section id="modalArea" class="modalArea">
             <div id="modalBg" class="modalBg"></div>
@@ -126,12 +126,15 @@
                 <h2 class="modalArea__title">宿泊予約</h2>
                 <dl class="form__body">
                   <dt><label for="name">お名前</label></dt>
-                  <dd class="form__text">
+                  <dt class="form__text">
                     <input type="text" name="name" id="name" placeholder="例：石井正悟" />
-                  </dd>
+                  </dt>
                 </dl>
                 <dl class="form__body">
-                  <dt><label for="mail-address"></label>メールアドレス</dt>
+                  <dt>
+                    <label for="mail-address"></label>
+                    メールアドレス
+                  </dt>
                   <dd class="form__text">
                     <input
                       type="text"
@@ -143,9 +146,9 @@
                 </dl>
                 <dl class="form__body">
                   <dt>
-                    <label for="desired-plan"
-                      >ご希望プラン（空いているプランのみ表示されます）</label
-                    >
+                    <label for="desired-plan">
+                      ご希望のプラン（空いているプランのみ表示されます）
+                    </label>
                   </dt>
                   <dd class="form__text">
                     <select name="desired-plan" id="desired-plan">
@@ -161,11 +164,13 @@
                   </dd>
                 </dl>
                 <dl class="form__body">
-                  <dt><label for="date-select">日時選択</label></dt>
+                  <dt>
+                    <label for="date-select">日時選択</label>
+                  </dt>
                   <dd class="form__text">
                     <input
-                      class="flatpickr flatpickr-input"
                       type="text"
+                      class="flatpickr flatpickr-input"
                       placeholder="日時を選択してください"
                       readonly="readonly"
                     />
@@ -177,22 +182,24 @@
             </div>
           </section>
         </div>
-        <!--header__inner-->
+        <!-- header__inner -->
       </header>
       <div class="lower-copy">お部屋</div>
     </div>
-    <!--fv-->
+    <!-- fv -->
     <main>
-      <div class="breadcrumb">
+      <section class="breadcrumb">
         <ul>
-          <li><a href="https://yosipblog.com/index.html">トップ</a></li>
+          <li>
+            <a href="index.html">トップ</a>
+          </li>
           <li>お部屋</li>
         </ul>
-      </div>
+      </section>
       <section class="lower-intro">
         <div class="section__wrapper">
           <p
-            class="lower-intro__text aos-init"
+            class="lower-intro__text aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="bottom-bottom"
@@ -206,17 +213,18 @@
       <section class="lower-detail">
         <div class="section__wrapper">
           <div class="lower-detail__media">
-            <figure class="media__img-wrapper aos-init" data-aos="fade-up" data-aos-duration="1000">
-              <img
-                src="./お部屋-石井花壇 _ 温海温泉旅館【公式サイト】_files/oheya01.jpg"
-                alt="温泉付き浴室"
-              />
+            <figure
+              class="media__img-wrapper aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="/images/oheya01.jpg" alt="温泉付き浴槽" />
             </figure>
             <div class="media__body">
               <h3 class="media__title aos-init" data-aos="fade-up" data-aos-duration="1000">
                 温泉付き客室
               </h3>
-              <p class="media__text aos-init" data-aos="fade-up" data-aos-duration="1000">
+              <p class="media__title aos-init" data-aos="fade-up" data-aos-duration="1000">
                 温海の源泉かけ流し露天風呂付き客室になります。<br />
                 あなただけの上質な安らぎのひとときを。
               </p>
@@ -226,36 +234,42 @@
               </ul>
             </div>
           </div>
-          <!--lower-detail__media-->
+          <!-- lower-detail__media -->
           <div class="lower-detail__media">
-            <figure class="media__img-wrapper aos-init" data-aos="fade-up" data-aos-duration="1000">
-              <img
-                src="./お部屋-石井花壇 _ 温海温泉旅館【公式サイト】_files/oheya02.jpg"
-                alt="庭園付き客室"
-              />
+            <figure class="madia__img-wrapper aos-init" data-aos="fade-up" data-aos-duration="1000">
+              <img src="images/oheya02.jpg" alt="庭付き客室" />
             </figure>
             <div class="media__body">
-              <h3 class="media__title aos-init" data-aos="fade-up" data-aos-duration="1000">
-                庭園付き客室
+              <h3
+                class="media__title aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                庭付き客室
               </h3>
-              <p class="media__text aos-init" data-aos="fade-up" data-aos-duration="1000">
+              <p
+                class="media__text aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 庭園付きの客室になります。<br />
                 お庭を見ながら、ほっとするひとときをお過ごしください。
               </p>
-              <ul class="media__notes aos-init" data-aos="fade-up" data-aos-duration="1000">
+              <ul
+                class="media__notes aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <li>＊お庭は複数のお客様と囲む形になります。</li>
                 <li>＊部屋数に限りがあります。</li>
                 <li>＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</li>
               </ul>
             </div>
           </div>
-          <!--lower-detail__media-->
+          <!-- lower-detail__media -->
           <div class="lower-detail__media">
             <figure class="media__img-wrapper aos-init" data-aos="fade-up" data-aos-duration="1000">
-              <img
-                src="./お部屋-石井花壇 _ 温海温泉旅館【公式サイト】_files/oheya03.jpg"
-                alt="一般客室"
-              />
+              <img src="/images/oheya03.jpg" alt="一般客室" />
             </figure>
             <div class="media__body">
               <h3 class="media__title aos-init" data-aos="fade-up" data-aos-duration="1000">
@@ -270,41 +284,46 @@
               </ul>
             </div>
           </div>
-          <!--lower-detail__media-->
+          <!-- lower-detail__media -->
         </div>
-        <!--section__wrapper-->
+        <!-- section__wrapper -->
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__head aos-init" data-aos="fade-up" data-aos-duration="2000">
+    <footer>
+      <div class="footer__head aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
         <ul class="page-link">
           <li class="page-link__category">
-            <a href="https://yosipblog.com/hot-spring.html">温泉</a>
+            <a href="hot-spring.html">温泉</a>
           </li>
           <li class="page-link__category">
-            <a href="https://yosipblog.com/cuisine.html">お料理</a>
+            <a href="cuisine.html">お料理</a>
           </li>
           <li class="page-link__category">
-            <a href="https://yosipblog.com/room.html">お部屋</a>
+            <a href="home.html">お部屋</a>
           </li>
         </ul>
-        <div class="footer__company aos-init" data-aos="fade-up" data-aos-duration="2000">
-          <a class="footer__company-name" href="https://yosipblog.com/index.html">石井花壇</a>
+        <div
+          class="footer__company aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <a href="index.html" class="footer__company-name"> 石井花壇 </a>
           <p class="footer__company-address">
-            〒000-0000<span class="footer__company--right">山形県鶴岡市xxxxxxxxxxx</span>
+            〒000-0000
+            <span class="footer__company--right">山形県鶴岡市xxxxxxxxxxx</span>
           </p>
           <p class="footer__company-tel">
             TEL.000-0000-0000
             <span class="footer__company--right">FAX.00-0000-0000</span>
           </p>
         </div>
-        <!--footer__company-->
+        <!-- footer__company -->
       </div>
-      <!--footer__head-->
+      <!-- footer__head -->
       <div class="footer__foot">
-        <small>Copyright © 石井花壇 All Rights Reserved.</small>
+        <small>Copyright ©︎ 石井花壇 ALL Rights Reserved.</small>
       </div>
-      <!--footer_foot-->
+      <!-- footer__foot -->
     </footer>
   </body>
 </html>

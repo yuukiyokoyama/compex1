@@ -122,36 +122,6 @@ body{
   color: #000000;
 }
 
-//273
-.header__inner {
-  height: 80px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__inner--left {
-  display: flex;
-  width: 520px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-//353
-.header__menu {
-  display: block;
-}
-
-.header__list {
-  display: flex;
-}
-
-.header__list-item {
-  font-weight: 700;
-  margin-right: 30px;
-}
-
 //1326
 .lower-fv{
   background-size: cover;
@@ -167,28 +137,15 @@ body{
   }
 }
 
-//1346
-.lower-header {
+.header__inner{
+  height: 80px;
+}
+
+.lower-header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   background-color: #fff;
-}
-
-.lower-header__site-title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3.2rem;
-  letter-spacing:0.18em;
-
-  &::before {
-    content: url(/images/logo02@2x.png);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px 5px 0;
-  }
 }

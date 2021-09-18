@@ -112,4 +112,91 @@ body {
   font-size: 1.6rem;
   color: #000000;
 }
+
+.header__inner {
+  height: 80px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 520px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu {
+  display: block;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-item {
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.lower-fv {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 580px;
+  position: relative;
+  color: #ffffff;
+  width: 100vw;
+}
+
+.lower-fv a {
+  color: #000000;
+}
+
+.lower-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.lower-header__site-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.2rem;
+  letter-spacing: 0.18em;
+}
+
+.lower-header__site-title::before {
+  content: url(/images/logo02@2x.png);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 5px 0;
+}
 /*# sourceMappingURL=room.css.map */

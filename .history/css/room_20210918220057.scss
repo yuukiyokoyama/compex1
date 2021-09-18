@@ -138,20 +138,6 @@ body{
   align-items: center;
 }
 
-//353
-.header__menu {
-  display: block;
-}
-
-.header__list {
-  display: flex;
-}
-
-.header__list-item {
-  font-weight: 700;
-  margin-right: 30px;
-}
-
 //1326
 .lower-fv{
   background-size: cover;
@@ -189,6 +175,5 @@ body{
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin: 0 10px 5px 0;
   }
 }

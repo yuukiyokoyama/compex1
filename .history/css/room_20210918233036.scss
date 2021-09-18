@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -6,6 +7,7 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -31,14 +33,18 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+blockquote {
+  &:before, &:after {
+    content: "";
+    content: none;
+  }
 }
 
-q:before, q:after {
-  content: "";
-  content: none;
+q {
+  &:before, &:after {
+    content: "";
+    content: none;
+  }
 }
 
 a {
@@ -50,6 +56,7 @@ a {
 }
 
 /* change colours to suit your needs */
+
 ins {
   background-color: #ff9;
   color: #000;
@@ -57,6 +64,7 @@ ins {
 }
 
 /* change colours to suit your needs */
+
 mark {
   background-color: #ff9;
   color: #000;
@@ -79,6 +87,7 @@ table {
 }
 
 /* change border colour to suit your needs */
+
 hr {
   display: block;
   height: 1px;
@@ -106,84 +115,61 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body{
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
   color: #000000;
   font-size: 1.6rem;
   color: #000000;
 }
 
-img {
-  width: 100%;
-  vertical-align: bottom;
-}
-
-li {
-  list-style: none;
-}
-
+//273
 .header__inner {
   height: 80px;
   padding: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__inner--left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 520px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
+//353
 .header__menu {
   display: block;
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .header__list-item {
   font-weight: 700;
   margin-right: 30px;
-}
 
-.header__list-item:last-child-item {
-  margin-right: 0;
+  &:last-child-item {
+    margin-right: 0;
+  }
 }
 
 .header__inner--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.burger__btn {
-  display: none;
-}
+//457
+ .burger__btn {
+   display: none;
+ }
 
 .bar {
   display: block;
   height: 3px;
   width: 30px;
   background-color: #ffffff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -193,33 +179,25 @@ li {
 
 .header__reservation {
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 54px;
   background-color: #978F10;
   border: 1px solid #707070;
   cursor: pointer;
+
+  &::before {
+    content: url(/images/calender.png);
+    display: inline-block;
+    margin-right: 8px;
+  }
 }
 
-.header__reservation::before {
-  content: url(/images/calender.png);
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.lower-fv {
+//1326
+.lower-fv{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -227,12 +205,13 @@ li {
   position: relative;
   color: #ffffff;
   width: 100vw;
+
+  a {
+    color: #000000;
+  }
 }
 
-.lower-fv a {
-  color: #000000;
-}
-
+//1346
 .lower-header {
   position: fixed;
   top: 0;
@@ -243,60 +222,46 @@ li {
 }
 
 .lower-header__site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 3.2rem;
-  letter-spacing: 0.18em;
+  letter-spacing:0.18em;
+
+  &::before {
+    content: url(/images/logo02@2x.png);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 5px 0;
+  }
 }
 
-.lower-header__site-title::before {
-  content: url(/images/logo02@2x.png);
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin: 0 10px 5px 0;
-}
-
+//1386
 .lower-copy {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 3.4rem;
   font-weight: 700;
 }
 
+//1415
 .breadcrumb {
   padding-top: 36px;
+
+  a {
+    color: #000000;
+  }
+
+  ul {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
-.breadcrumb a {
-  color: #000000;
-}
-
-.breadcrumb ul {
-  max-width: 1180px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
-.breadcrumb ul li:last-of-type::before {
-  content: ">";
-  margin: 0 10px;
-}
-
+//1578
 .btn__bg-color {
   background-color: #000000;
 }
-/*# sourceMappingURL=room.css.map */

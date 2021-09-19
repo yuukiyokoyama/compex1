@@ -213,8 +213,8 @@ li {
 
 //547
 .modalArea{
-  visibility: hidden;
-  opacity: 0;
+  //visibility: hidden;
+  //opacity: 0;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -228,7 +228,7 @@ li {
 .modalBg {
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 30, 30, 0.9);
+  background-color: rgba(30, 30, 30, 30);
 }
 
 .modalWrapper {
@@ -242,55 +242,9 @@ li {
   background-color: #fff;
 }
 
-.closeModal {
-  position: absolute;
-  top: -0.5rem;
-  right: 1.5rem;
-  cursor: pointer;
-  font-size: 3.8rem;
-}
-
-// .is-show {
-//   /* モーダル表示用クラス */
-//   visibility: visible;
-//   opacity: 1;
-// }
-
 .modalArea__title {
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e7e7e7;
-  font-weight: normal;
-}
-
-.form__body {
-  margin-top: 15px;
-
-  &:first-of-type {
-    margin-top: 15px;
-  }
-
-  input, select {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #e7e7e7;
-    color: #797878;
-  }
-}
-
-.form__text {
-  margin-top: 10px;
-}
-
-.form__submit-btn {
-  display: block;
-  padding: 13px 67px;
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #707070;
-  margin: 64px auto 0px;
 }
 
 //1222

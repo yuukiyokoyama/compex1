@@ -213,8 +213,8 @@ li {
 
 //547
 .modalArea{
-  visibility: hidden;
-  opacity: 0;
+  //visibility: hidden;
+  //opacity: 0;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -228,7 +228,7 @@ li {
 .modalBg {
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 30, 30, 0.9);
+  background-color: rgba(30, 30, 30, 30);
 }
 
 .modalWrapper {
@@ -246,15 +246,7 @@ li {
   position: absolute;
   top: -0.5rem;
   right: 1.5rem;
-  cursor: pointer;
-  font-size: 3.8rem;
 }
-
-// .is-show {
-//   /* モーダル表示用クラス */
-//   visibility: visible;
-//   opacity: 1;
-// }
 
 .modalArea__title {
   font-size: 2rem;

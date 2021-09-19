@@ -247,29 +247,6 @@ footer {
   }
 }
 
-.footer__company-name {
-  font-size: 3.2rem;
-  letter-spacing: 0.18em;
-  font-weight: 600;
-
-  &::before {
-    content: url("/images/logo02@2x.png");
-    display: block;
-  }
-}
-
-.footer__company-address {
-  margin-top: 72px;
-}
-
-.footer__company--right {
-  margin-left: 20px;
-}
-
-.footer__company-tel {
-  margin-top: 23px;
-}
-
 //1326
 .lower-fv{
   background-size: cover;

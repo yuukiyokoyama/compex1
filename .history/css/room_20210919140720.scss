@@ -224,50 +224,6 @@ footer {
 .page-link__category {
   writing-mode: vertical-rl;
   display: inline-block;
-  vertical-align: top;
-  margin-right: 34px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  a {
-    color: #000000;
-    display: block;
-    letter-spacing: 0.7em;
-  }
-}
-
-.footer__company {
-  margin-top: 96px;
-  text-align: center;
-
-  a {
-    color: #000000;
-  }
-}
-
-.footer__company-name {
-  font-size: 3.2rem;
-  letter-spacing: 0.18em;
-  font-weight: 600;
-
-  &::before {
-    content: url("/images/logo02@2x.png");
-    display: block;
-  }
-}
-
-.footer__company-address {
-  margin-top: 72px;
-}
-
-.footer__company--right {
-  margin-left: 20px;
-}
-
-.footer__company-tel {
-  margin-top: 23px;
 }
 
 //1326

@@ -225,6 +225,66 @@ li {
   margin-right: 8px;
 }
 
+footer {
+  background-image: url(/images/bg3.jpg);
+  padding-top: 64px;
+}
+
+.page-link {
+  text-align: center;
+}
+
+.page-link__category {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 34px;
+}
+
+.page-link__category:last-child {
+  margin-right: 0;
+}
+
+.page-link__category a {
+  color: #000000;
+  display: block;
+  letter-spacing: 0.7em;
+}
+
+.footer__company {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.footer__company a {
+  color: #000000;
+}
+
+.footer__company-name {
+  font-size: 3.2rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
+.footer__company-name::before {
+  content: url("/images/logo02@2x.png");
+  display: block;
+}
+
+.footer__company-address {
+  margin-top: 72px;
+}
+
+.footer__company--right {
+  margin-left: 20px;
+}
+
+.footer__company-tel {
+  margin-top: 23px;
+}
+
 .lower-fv {
   background-size: cover;
   background-position: center center;
@@ -333,6 +393,15 @@ li {
 
 .lower-detail__media:last-of-type {
   margin-bottom: 0;
+}
+
+.lower-detail__media:nth-of-type(even) .media__img-wrapper {
+  margin-left: auto;
+}
+
+.lower-detail__media:nth-of-type(even) .media__body {
+  left: 0;
+  padding: 60px 19% 20px 4%;
 }
 
 .media__img-wrapper {

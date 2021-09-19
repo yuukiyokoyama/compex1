@@ -137,17 +137,6 @@ li {
   margin: 0 auto;
 }
 
-.section__title {
-  font-size: 3.6rem;
-  text-align: center;
-  font-weight: normal;
-
-  &::before {
-    content: url(/images/logo02@2x.png);
-    display: block;
-  }
-}
-
 //168
 .fv {
   width: 100%;
@@ -498,36 +487,7 @@ li {
   background-image: url(/images/bg02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 4vw 144px;
-}
-
-.lodging-plan__plans {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.lodging-plans_item {
-  width: 28.0508%;
-}
-
-.lodging-plan__img-wrapper img {
-  height: 209px;
-  object-fit: cover;
-}
-
-.lodging-plan__body {
-  padding-top: 30px;
-}
-
-.lodging-plan__title {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.lodging-plan__text {
-  margin-top: 36px;
-  line-height: 2;
+  
 }
 
 //1222

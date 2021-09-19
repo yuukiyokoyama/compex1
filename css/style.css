@@ -651,6 +651,52 @@ li {
   letter-spacing: 0.000001em;
 }
 
+.access {
+  padding: 60px 4vw 110px;
+  background-image: url(/images/bg01@2x.png);
+}
+
+.access__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+.access__img-wrapper {
+  max-width: 656px;
+  width: 100%;
+  margin-right: 7.0338%;
+}
+
+.access__body {
+  margin-top: 20px;
+}
+
+.access__body:first-of-type {
+  margin-top: 0;
+}
+
+.access__title {
+  font-weight: 700;
+}
+
+.access__text {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.access__map {
+  text-align: center;
+  margin-top: 70px;
+}
+
 footer {
   background-image: url(/images/bg3.jpg);
   padding-top: 64px;

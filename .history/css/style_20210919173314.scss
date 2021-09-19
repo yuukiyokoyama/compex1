@@ -208,22 +208,7 @@ li {
 
 .header__site-title {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 3.2rem;
-  letter-spacing: 0.18em;
-
-  &::before {
-    content: url(/images/logo01.png);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px 5px 0;
-  }
-
-  &.change-before::before {
-    content: url(/images/logo02@2x.png);
-  }
+  
 }
 
 //353
@@ -239,7 +224,7 @@ li {
   font-weight: 700;
   margin-right: 30px;
 
-  &:last-child {
+  &:last-child-item {
     margin-right: 0;
   }
 }
@@ -259,10 +244,6 @@ li {
   width: 30px;
   background-color: #ffffff;
   transition: 0.3s;
-
-  &.change-background-color {
-    background-color: #000000;
-  }
 }
 
 .bar_top, .bar_mid {
@@ -368,19 +349,6 @@ li {
   background-color: #fff;
   border: 1px solid #707070;
   margin: 64px auto 0px;
-}
-
-//655
-.copy {
-  color: #ffffff;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 2.8rem;
-  position: absolute;
-  top: 40vh;
-  right: 26.4583%;
-  line-height: 3;
-  letter-spacing :0.625rem;
 }
 
 //1222

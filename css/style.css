@@ -141,8 +141,45 @@ li {
 }
 
 .fv__img {
+  z-index: -2;
   width: 100%;
   height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 21s 0s infinite;
+          animation: anime 21s 0s infinite;
+}
+
+.fv__img:nth-of-type(2) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.fv__img:nth-of-type(3) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header.change-color {
+  background-color: #ffffff;
+}
+
+.header.change-color a {
+  color: #000000;
 }
 
 .header__inner {
@@ -172,6 +209,32 @@ li {
           align-items: center;
 }
 
+.header__site-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.2rem;
+  letter-spacing: 0.18em;
+}
+
+.header__site-title::before {
+  content: url(/images/logo01.png);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 5px 0;
+}
+
+.header__site-title.change-before::before {
+  content: url(/images/logo02@2x.png);
+}
+
 .header__menu {
   display: block;
 }
@@ -187,7 +250,7 @@ li {
   margin-right: 30px;
 }
 
-.header__list-item:last-child-item {
+.header__list-item:last-child {
   margin-right: 0;
 }
 
@@ -208,6 +271,10 @@ li {
   background-color: #ffffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.bar.change-background-color {
+  background-color: #000000;
 }
 
 .bar_top, .bar_mid {
@@ -320,6 +387,20 @@ li {
   margin: 64px auto 0px;
 }
 
+.copy {
+  color: #ffffff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 40vh;
+  right: 26.4583%;
+  line-height: 3;
+  letter-spacing: 0.625rem;
+}
+
 footer {
   background-image: url(/images/bg3.jpg);
   padding-top: 64px;
@@ -404,30 +485,6 @@ footer {
 
 .lower-fv a {
   color: #000000;
-}
-
-.fv__img {
-  z-index: -2;
-  width: 100%;
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-animation: anime 21s 0s infinite;
-          animation: anime 21s 0s infinite;
-}
-
-.fv__img:nth-of-type(2) {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.fv__img:nth-of-type(3) {
-  -webkit-animation-delay: 16s;
-          animation-delay: 16s;
 }
 
 .lower-header {

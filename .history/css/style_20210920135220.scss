@@ -889,20 +889,5 @@ line-height: 4.5;
 }
 
 .efficacy-of-hot-springs__wrapper {
-  border-top: 1px solid #e7e7e7;
-  
-  &:last-of-type {
-    border-bottom: 1px solid #e7e7e7;
-
-    .efficacy-of-hot-springs__name {
-      padding: 17px 0 50px;
-    }
-  }
-}
-
-.efficacy-of-hot-springs__name {
-  text-align: left;
-  width: 25%;
-  font-weight: normal;
-  padding: 17px 0;
+  border-top: 1px solid #e7e7e7; 
 }
